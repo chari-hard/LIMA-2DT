@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha página de navegação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      #bg-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        object-fit: cover;
+        top: 50%;
+        left: 50%;
+        background-color: black;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+      }
+
+      .box-navegacao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        gap: 25px;
+        transform: translateX(200px);
+        margin-top: 50vh;
+      }
+
+      h1{
+        display: flex;
+        padding: 10px;
+        background-color: #00000037;
+        color: white;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        width: 250px;
+        padding: 10px 0px;
+        height: auto;
+        color: white;
+        text-decoration: none;
+        font-family: "Archivo Black", sans-serif;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAj0AAABjCAMAAABHVEGdAAAAV1BMVEUAAAD/0Rj/0Rn/0Rj/1Sr/0Rn/0Rj/0Rn/0Rn/qgD/0Rn/2yT/0RnWpiDXpyDZqR/9zxnuvxzxwhvaqh/gsB7ltR35yhr1xxrdrR/isx7nuB3rvBzZqh9j6KP/AAAADHRSTlMAV/iMBuDarOQDpgfTMeuDAAADaUlEQVR42u3d3ZabIBRAYczvTHsOoKBG0/d/zg6mJhlTnUJ70Yv9XUzW3O9FAA2YyaH6dtwJ8Cd2p2/VwdxVJwFynCpz874XINf+3STEgxJ786ESoERlzOFNgBJvB4YeFKvMWYAyZ3MUoMzRsEmIUjsjdwokTj500d3YiaraWHv5jHqw5CQZ9eZHCE5/Cc1X9YSxF8BHVavu2sk1FTWMQ4roKk9e6xloB5PeqtpapEkfPvVUW9VG7l7rab0Ak0E1evFBbfcIynl5MHJHPPikc64WqVXTAHSxl2b+Z7aoZyAePNTRiwzqvDSaNOJ/6CCzRT2BOQ+e+N6LBG1FLppcRFoNMlvUMwqwYHVMfxIrMqqV2aIehh4sLcee9XoEWFjOe6gHGRZrLupBhuf9ns5SDzIs95od9SDH9JyrHdvpOVegHmRpwuMZO/Ugk6+jUxdrLx3fXCg2qpMZ9SCHv1rqQQnf1VGVelCij1aVsQdFfBOUsQeluiFQD4r1kScVKObbi8yoB5l8JzPqQTbqAfWgCPXgf0A9yGLZ70GJZSXUgzw99aBYu15PI8CW3q3XEzkEAVt81LV6OIAF23yrW/Vo2wnwe12rm/VwjAbWjbpRj2XsQfHY45j3oHje41hzoXjN5Sz7PdjW2NV6BgG2xdV6OHgOX2nW6mHWgy/5tXpqATLf0ACoB1uoB/8B6sG/r6djzYXiei485UJxPVYj+4UorMephoE3NFBYz4fQ8PWFonqsquXbC6VjT6xZeaFw7LmSDgrr4ZV4lK/YXXe/kIAxCJn1hKfLUHhJFZn1TBcxDeMwXcQkQEY97ukSOI5EQNYJLFYfF1D2Vh1zH7xoVutZXH7Lm6p4cV2tZ3HxNj/QwYu4Ws/i0v8gwGe9W69nTH8SKzKqFeCzUdfqCa9jj++ZOuOhD6v1DIt5TxTxkakz7vygq/XUr2uu2jleF8Mvfuv8Hh8e+z3dtADzUVl54RHPRj3SLPea04flbTEk/aCb9cj0nKsd29tzru7q1HIML5J+DLpVT9IE/cWF8ENvRkmcApv1iK+jVVU7cTexox7M+CUy/gb14J8wOwHK7MxJgDJHcxagzNlUApSpzOFNgBJv3w2DDwpV5sNegHx7k7yTD/Lt381NxbIdeU6VuTtU5yPbhvgzu+O5OpjkJ++qdU6bRIarAAAAAElFTkSuQmCC);
+      }
+
+      a:hover{
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop id="bg-video" fetchpriority="high">
+      <source
+        src="https://webstatic.mihoyo.com/upload/op-public/2021/04/07/3e78e808a274ec2caf5dce50012d62ad_9088595695304136470.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <main>
+        <div class="box-navegacao">
+          <a href="./pages/sobre.html" target="_blank">Sobre</a>
+          <a href="./pages/atividades.html" target="_blank">Atividades</a>
+          <a href="./pages/contato.html" target="_blank">Contatos</a>
+          <a href="./pages/listas.html" target="_blank">Listas</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
