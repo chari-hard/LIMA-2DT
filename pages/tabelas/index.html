@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      img {
+        width: 40px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Tabelas</h1>
+
+      <table border="1px">
+        <thead>
+          <tr>
+            <th colspan="5">Heróis Overwatch</th>
+          </tr>
+          <tr>
+            <th>Foto</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Função</th>
+            <th>Sub função</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/7/71/Icon-Hanzo.png/revision/latest/scale-to-width-down/250?cb=20221005165925"
+                alt="foto hanzo"/>
+            </td>
+            <td>Hanzo</td>
+            <td>40</td>
+            <td>
+              <img
+                src="https://static.wikia.nocookie.net/overwatch/images/1/14/OffenseIcon.png/revision/latest/smart/width/250/height/250?cb=20160625040759"
+                alt="foto dano"
+              />
+            </td>
+            <td>Artilharia</td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/7/71/Icon-Hanzo.png/revision/latest/scale-to-width-down/250?cb=20221005165925"
+                alt="foto hanzo"/>
+            </td>
+            <td>Hanzo</td>
+            <td>40</td>
+            <td>
+              <img
+                src="https://static.wikia.nocookie.net/overwatch/images/1/14/OffenseIcon.png/revision/latest/smart/width/250/height/250?cb=20160625040759"
+                alt="foto dano"
+              />
+            </td>
+            <td>Artilharia</td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/7/71/Icon-Hanzo.png/revision/latest/scale-to-width-down/250?cb=20221005165925"
+                alt="foto hanzo"/>
+            </td>
+            <td>Hanzo</td>
+            <td>40</td>
+            <td>
+              <img
+                src="https://static.wikia.nocookie.net/overwatch/images/1/14/OffenseIcon.png/revision/latest/smart/width/250/height/250?cb=20160625040759"
+                alt="foto dano"
+              />
+            </td>
+            <td>Artilharia</td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/7/71/Icon-Hanzo.png/revision/latest/scale-to-width-down/250?cb=20221005165925"
+                alt="foto hanzo"/>
+            </td>
+            <td>Hanzo</td>
+            <td>40</td>
+            <td>
+              <img
+                src="https://static.wikia.nocookie.net/overwatch/images/1/14/OffenseIcon.png/revision/latest/smart/width/250/height/250?cb=20160625040759"
+                alt="foto dano"
+              />
+            </td>
+            <td>Artilharia</td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/7/71/Icon-Hanzo.png/revision/latest/scale-to-width-down/250?cb=20221005165925"
+                alt="foto hanzo"/>
+            </td>
+            <td>Hanzo</td>
+            <td>40</td>
+            <td>
+              <img
+                src="https://static.wikia.nocookie.net/overwatch/images/1/14/OffenseIcon.png/revision/latest/smart/width/250/height/250?cb=20160625040759"
+                alt="foto dano"
+              />
+            </td>
+            <td>Artilharia</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ---- tabela com rowspan e colspan---- -->
+
+      <table border="1px">
+        <thead>
+            <tr>
+                <th colspan="4">
+                    Festival de Cinema 2026
+                </th>
+            </tr>
+            <tr>
+                <th>Categoria</th>
+                <th>Filme</th>
+                <th>Horário</th>
+                <th>Sala</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td rowspan="2">Ação</td> 
+               <td>Vingadores</td>
+               <td>18:00</td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>Batman</td>
+               <td>20:30</td>
+               <td>2</td>
+            </tr>
+            <tr>
+               <td rowspan="2">Animação</td> 
+               <td>Toystory</td>
+               <td>16:00</td>
+               <td>3</td>
+            </tr>
+            <tr>
+               <td>Frozen</td>
+               <td>17:30</td>
+               <td>4</td>
+            </tr>
+            <tr>
+               <td rowspan="2">Terror</td> 
+               <td>Weapons</td>
+               <td>21:00</td>
+               <td>5</td>
+            </tr>
+            <tr>
+               <td>Resident evil</td>
+               <td>22:30</td>
+               <td>6</td>
+            </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
