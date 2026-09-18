@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/assets/images/planet-icon-7370.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <title>Atividade 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://wallpaperaccess.com/full/10099544.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            gap: 30px;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main h1{
+            color: #fff;
+            font-family: "Smooch Sans", sans-serif;
+            font-size: 48px;
+        }
+
+        .box-main{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .box-interna{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            gap: 10px;
+            width: 350px;
+            min-height: 300px;
+            max-height: 500px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box-interna img {
+            width: 125px;
+            height: 125px;
+            object-fit: cover;
+        }
+
+        .box-interna h2 {
+            color: #650097;
+            font-family: "Smooch Sans", sans-serif;;
+            font-size: 36px;
+            font-weight: 500;
+        }
+
+        .box-interna p {
+            display: flex;
+            font-family: "Poppins", sans-serif;
+            width: 280px;
+        }
+
+        .box-interna:hover {
+            transform: translateY(-50px);  
+        
+        }
+
+        #mao1{
+            width: 200px;
+        }
+
+        #mao2{
+            width: 200px;
+            transform: scaleX(-1)
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Minha Página</h1>
+
+        <div class="box-main">
+            <div class="box-interna">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqihoO0gyDMbacKSrGXD2zGtxH-WL4cOFx1O5dC032Ag&s=10" alt="icone saturno" loading="lazy">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaL4RYpGJRdsNF5Un9N6VpuYfP1SW3tR_kRbgBv-7CPB6cnSLJ7C3n3BA&s=10" id="mao1">
+
+                <h2>título 2</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis soluta quidem nobis voluptatum similique iure facere omnis aperiam, in adipisci culpa vero rerum iusto, cumque, iste non? Autem, culpa!</p>
+            </div>
+
+            <div class="box-interna">
+                
+                <img src="https://png.pngtree.com/png-clipart/20200309/ourmid/pngtree-gold-number-7-png-image_2158848.jpg" alt="icone saturno" loading="lazy">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaL4RYpGJRdsNF5Un9N6VpuYfP1SW3tR_kRbgBv-7CPB6cnSLJ7C3n3BA&s=10" id="mao2">
+
+                <h2>título 2</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos debitis in officia culpa possimus, ratione iusto alias maiores? cumque similique molestias quia fuga facere quod eligendi?</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
